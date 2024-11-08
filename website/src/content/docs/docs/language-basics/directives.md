@@ -2,7 +2,7 @@
 title: Directives
 ---
 
-Directives are predefined annotations that attach to the syntax nodes unlike decorators which will cary over with `model is`, `op is`, etc. This means any syntax node is able to have a directive(e.g `alias`).
+Directives are predefined annotations that attach to syntax nodes and carry over with their type definitions (e.g. `model is`, `op is`, etc). They differ from directives, which can only attach to certain node types. This means any syntax node is able to have a directive (e.g `alias`).
 
 These are the available directives:
 
@@ -11,7 +11,7 @@ These are the available directives:
 
 ## #deprecated
 
-The deprecated directive allows marking a node and through it its type as deprecated. It takes a single argument which is the deprecation message.
+The deprecated directive allows marking a node (and through it, its type) as deprecated. It takes a single argument which is the deprecation message.
 
 ```tsp
 #deprecated "Use NewUser instead"
@@ -82,4 +82,4 @@ model Post {
 
 ### Api
 
-There is currently no exposed api to resolve suppresssions
+There is currently no exposed api to resolve suppressions.
